@@ -12,7 +12,7 @@ resource "google_compute_instance" "gitlab" {
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-9"
+      image = "ubuntu-os-pro-cloud/ubuntu-pro-1804-bionic-v20220510"
     }
   }
 
