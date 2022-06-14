@@ -3,12 +3,12 @@ resource "google_service_account" "default" {
   display_name = "Service Account"
 }
 
-resource "google_compute_instance" "default" {
-  name         = "test"
+resource "google_compute_instance" "gitlab" {
+  name         = "gitlab"
   machine_type = "e2-medium"
   zone         = "us-central1-a"
 
-  tags = ["foo", "bar"]
+  tags = ["Name", "gitlab"]
 
   boot_disk {
     initialize_params {
