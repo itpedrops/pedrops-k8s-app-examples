@@ -11,6 +11,8 @@ RUN mvn -f /app/pom.xml clean install
 #
 FROM openjdk:11-jre-slim
 WORKDIR /app
-COPY --from=build  /app/hello-world-1.0.1-SNAPSHOT.jar /usr/local/lib/hello-world-1.0.1-SNAPSHOT.jar
+RUN ls -lha
+RUN ls -lha /app/
+COPY --from=build  /app/*.jar /usr/local/lib/hello-world-1.0.1-SNAPSHOT.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","/usr/local/lib/hello-world-1.0.1-SNAPSHOT.jar"]
