@@ -5,7 +5,7 @@ FROM maven:3.6.0-jdk-11-slim AS build
 WORKDIR /app
 COPY pom.xml .
 #RUN mvn -f /home/app/pom.xml clean package
-RUN mvn -f /app/pom.xml mvn clean install
+RUN mvn -f /app/pom.xml clean install
 #
 # Package stage
 #
