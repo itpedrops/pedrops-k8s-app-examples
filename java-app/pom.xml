@@ -43,7 +43,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             <configuration>
-                <mainClass>com.example.apps.hello-world</mainClass>
+                <mainClass>com.example.helloworld</mainClass>
             </configuration>
             </plugin>
         </plugins>
