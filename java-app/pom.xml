@@ -18,7 +18,6 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <start-class>com.example.helloworld.HelloWorldApplication</start-class>
     </properties>
 
     <dependencies>
@@ -44,7 +43,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             <configuration>
-                <mainClass>com.example.helloworld</mainClass>
+                <mainClass>com.example.helloworld.HelloWorldApplicatio</mainClass>
             </configuration>
             </plugin>
         </plugins>
